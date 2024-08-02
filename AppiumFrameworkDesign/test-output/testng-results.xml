@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-30T08:08:52 EDT" name="Default suite" finished-at="2024-07-30T08:09:33 EDT" duration-ms="41664">
+    <groups>
+    </groups>
+    <test started-at="2024-07-30T08:08:52 EDT" name="Default test" finished-at="2024-07-30T08:09:33 EDT" duration-ms="41664">
+      <class name="org.rahulshettyacademy.IOSBasics">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.rahulshettyacademy.IOSBasics@795509d9]" started-at="2024-07-30T08:08:52 EDT" name="configureAppium" finished-at="2024-07-30T08:09:27 EDT" duration-ms="35348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="iOSBasicsTest()[pri:0, instance:org.rahulshettyacademy.IOSBasics@795509d9]" started-at="2024-07-30T08:09:27 EDT" name="iOSBasicsTest" finished-at="2024-07-30T08:09:32 EDT" duration-ms="5147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iOSBasicsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.rahulshettyacademy.IOSBasics@795509d9]" started-at="2024-07-30T08:09:32 EDT" name="tearDown" finished-at="2024-07-30T08:09:33 EDT" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.rahulshettyacademy.IOSBasics -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

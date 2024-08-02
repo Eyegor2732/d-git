@@ -1,0 +1,14 @@
+
+	[
+		{
+			"country":"Armenia",
+			"name":"Ara",
+			"gender": "male"
+		},
+		
+		{
+			"country":"Georgia",
+			"name":"Suleiko",
+			"gender": "female"
+		}
+	]

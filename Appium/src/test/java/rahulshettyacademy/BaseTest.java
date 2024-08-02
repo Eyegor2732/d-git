@@ -9,7 +9,7 @@ import java.time.Duration;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -24,26 +24,30 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class BaseTest {
 
 	public AndroidDriver driver;
-	public AppiumDriverLocalService service;
+//	public AppiumDriverLocalService service;
 //	public WebDriverWait wait;
 	
 //	private String apkPath = "D:\\git\\d-git-appium-java\\Appium\\src\\test\\java\\resources\\ApiDemos-debug.apk";
 //	private String appPackage = "io.appium.android.apis";
 	
-	private String apkPath = "D:\\git\\d-git-appium-java\\Appium\\src\\test\\java\\resources\\General-Store.apk";	
-	private String appPackage = "com.androidsample.generalstore";
-	private String chromeDriverPath = "D:\\git\\d-git-appium-java\\Appium\\src\\test\\java\\resources\\chromedriver.exe";
+	private String apkPath = "/Users/michaels-mac-mini/Desktop/rahul/d-git-appium-java/Appium/src/test/java/resources/ApiDemos-debug.apk";	
+	private String appPackage = "io.appium.android.apis";
+	
+//	private String apkPath = "/Users/michaels-mac-mini/Desktop/rahul/d-git-appium-java/Appium/src/test/java/resources/General-Store.apk";	
+//	private String appPackage = "com.androidsample.generalstore";
+	
+	private String chromeDriverPath = "/Users/michaels-mac-mini/Desktop/rahul/d-git-appium-java/Appium/src/test/java/resources/chromedriver";
 	
 	
 	@BeforeClass
 	public void configureAppium() throws MalformedURLException, URISyntaxException {
-		File mainJsFile = new File(
-				"C:\\Users\\koval\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
-		service = new AppiumServiceBuilder().withAppiumJS(mainJsFile).withIPAddress("127.0.0.1").usingPort(4723)
-				.build();
-		service.start();
+//		File mainJsFile = new File(
+//				"C:\\Users\\koval\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js");
+//		service = new AppiumServiceBuilder().withAppiumJS(mainJsFile).withIPAddress("127.0.0.1").usingPort(4723)
+//				.build();
+//		service.start();
 
-		// Set UiAutomator2 Options
+		// Set UiAutomator2 Options2
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setChromedriverExecutable(chromeDriverPath);
 		options.setDeviceName("Pixel 2 API 35"); // optional - emulator
@@ -137,7 +141,7 @@ public class BaseTest {
 	public void tearDown() {
 		driver.terminateApp(appPackage);
 		driver.quit();
-		service.stop();
+//		service.stop();
 	}
 
 }

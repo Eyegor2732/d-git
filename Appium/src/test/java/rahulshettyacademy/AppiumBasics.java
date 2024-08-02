@@ -25,9 +25,14 @@ public class AppiumBasics extends BaseTest{
 		preferenceDependenciesLink.click();
 		
 		WebElement wifiCheckbox = driver.findElement(AppiumBy.id("android:id/checkbox"));
-		if (!wifiCheckbox.isSelected()) {
+		
+		String checkedAttribute = wifiCheckbox.getAttribute("checked");
+		if (checkedAttribute.equals("false")) {
 			wifiCheckbox.click();
 		}
+//		if (!wifiCheckbox.isSelected()) {
+//			wifiCheckbox.click();
+//		}
 		
 		WebElement wifiSettings = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"WiFi settings\"]"));
 		wifiSettings.click();

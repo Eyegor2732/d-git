@@ -1,112 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-23T18:42:24 EDT" name="Default suite" finished-at="2024-07-23T18:42:24 EDT" duration-ms="361">
+  <suite started-at="2024-07-28T10:48:55 EDT" name="Default suite" finished-at="2024-07-28T10:49:10 EDT" duration-ms="14665">
     <groups>
     </groups>
-    <test started-at="2024-07-23T18:42:24 EDT" name="Default test" finished-at="2024-07-23T18:42:24 EDT" duration-ms="361">
-      <class name="rahulshettyacademy.IOSBasics">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:rahulshettyacademy.IOSBasics@192d43ce]" started-at="2024-07-23T18:42:24 EDT" name="configureAppium" finished-at="2024-07-23T18:42:24 EDT" duration-ms="338" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName 'XCuiTest' and platformName 'IOS'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: onExit is not a function) 
-Host info: host: 'Michaels-Mini.attlocal.net', ip: '192.168.1.116'
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '21.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}]}]
-Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName 'XCuiTest' and platformName 'IOS'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: onExit is not a function) 
-Host info: host: 'Michaels-Mini.attlocal.net', ip: '192.168.1.116'
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '21.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}]}]
-Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
-at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:101)
-at rahulshettyacademy.IOSBaseTest.configureAppium(IOSBaseTest.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+    <test started-at="2024-07-28T10:48:55 EDT" name="Default test" finished-at="2024-07-28T10:49:10 EDT" duration-ms="14665">
+      <class name="rahulshettyacademy.eCommerce_tc_4">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:rahulshettyacademy.eCommerce_tc_4@5149d738]" started-at="2024-07-28T10:48:55 EDT" name="configureAppium" finished-at="2024-07-28T10:48:59 EDT" duration-ms="4103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="iOSBasicsTest()[pri:0, instance:rahulshettyacademy.IOSBasics@192d43ce]" started-at="2024-07-23T18:42:24 EDT" name="iOSBasicsTest" finished-at="2024-07-23T18:42:24 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="fillFormTest()[pri:0, instance:rahulshettyacademy.eCommerce_tc_4@5149d738]" started-at="2024-07-28T10:48:59 EDT" name="fillFormTest" finished-at="2024-07-28T10:49:09 EDT" duration-ms="10065" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName 'XCuiTest' and platformName 'IOS'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: onExit is not a function) 
-Host info: host: 'Michaels-Mini.attlocal.net', ip: '192.168.1.116'
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '21.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}]}]
-Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}]]>
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '21.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [1db6027d-5716-485d-92e7-8cddbe925da9, findElement {using=id, value=com.androidsample.generalstore:id/spinnerCountry}]
+Capabilities {appium:app: /Users/michaels-mac-mini/De..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /Users/michaels-mac-mini/De..., appium:databaseEnabled: false, appium:desired: {app: /Users/michaels-mac-mini/De..., automationName: UIAutomator2, chromedriverExecutable: /Users/michaels-mac-mini/De..., deviceName: Pixel 2 API 35, eventTimings: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:eventTimings: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1db6027d-5716-485d-92e7-8cddbe925da9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName 'XCuiTest' and platformName 'IOS'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: onExit is not a function) 
-Host info: host: 'Michaels-Mini.attlocal.net', ip: '192.168.1.116'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '21.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}]}]
-Capabilities {appium:app: /Users/eyegor/Desktop/UIKit..., appium:automationName: XCuiTest, appium:deviceName: iPhone 15 Pro, appium:platformVersion: 17.4, appium:wdaLaunchTimeout: 20000, platformName: IOS}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '21.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [1db6027d-5716-485d-92e7-8cddbe925da9, findElement {using=id, value=com.androidsample.generalstore:id/spinnerCountry}]
+Capabilities {appium:app: /Users/michaels-mac-mini/De..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /Users/michaels-mac-mini/De..., appium:databaseEnabled: false, appium:desired: {app: /Users/michaels-mac-mini/De..., automationName: UIAutomator2, chromedriverExecutable: /Users/michaels-mac-mini/De..., deviceName: Pixel 2 API 35, eventTimings: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:eventTimings: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1db6027d-5716-485d-92e7-8cddbe925da9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
-at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:101)
-at rahulshettyacademy.IOSBaseTest.configureAppium(IOSBaseTest.java:38)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at rahulshettyacademy.eCommerce_tc_4.fillFormTest(eCommerce_tc_4.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -125,15 +74,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- iOSBasicsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.IOSBasics@192d43ce]" started-at="2024-07-23T18:42:24 EDT" name="tearDown" finished-at="2024-07-23T18:42:24 EDT" duration-ms="0" status="SKIP">
+        </test-method> <!-- fillFormTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.eCommerce_tc_4@5149d738]" started-at="2024-07-28T10:49:09 EDT" name="tearDown" finished-at="2024-07-28T10:49:10 EDT" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- rahulshettyacademy.IOSBasics -->
+      </class> <!-- rahulshettyacademy.eCommerce_tc_4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

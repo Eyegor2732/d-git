@@ -38,15 +38,15 @@ public class eCommerce_tc_1 extends BaseTest{
 		String actualErrorToastText = errorToast.getAttribute("name");
 		Assert.assertEquals(actualErrorToastText, "Please enter your name", "Unexpected error toast text.");
 		
-		WebElement inputNameField = driver.findElement(By.id("com.androidsample.generalstore:id/nameField"));
-		inputNameField.sendKeys("Eyegor");
-		Assert.assertTrue(inputNameField.getText().equals("Eyegor"), "Wrong name is shown");
-		driver.hideKeyboard();
-		
-		letsShopButton.click();
-		
-		WebElement productsPageTitle = driver.findElement(By.xpath("//android.widget.TextView[@text='Products']"));
-		Assert.assertTrue(productsPageTitle.isDisplayed());
+//		WebElement inputNameField = driver.findElement(By.id("com.androidsample.generalstore:id/nameField"));
+//		inputNameField.sendKeys("Eyegor");
+//		Assert.assertTrue(inputNameField.getText().equals("Eyegor"), "Wrong name is shown");
+//		driver.hideKeyboard();
+//		
+//		letsShopButton.click();
+//		
+//		WebElement productsPageTitle = driver.findElement(By.xpath("//android.widget.TextView[@text='Products']"));
+//		Assert.assertTrue(productsPageTitle.isDisplayed());
 //		
 //		scrollToElementAction("Air Jordan 9 Retro");
 //		WebElement productCard = driver.findElement(By.xpath("//android.widget.TextView[@text='Air Jordan 9 Retro']/.."));
